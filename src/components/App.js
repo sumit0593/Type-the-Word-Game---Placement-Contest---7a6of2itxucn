@@ -4,7 +4,7 @@ import "../styles/App.css";
 const WORD_LIST = ["apple", "banana", "cherry", "grape", "orange"];
 
 function App() {
-  const [word, setWord] = useState(WORD_LIST[0]);
+  const [word, setWord] = useState("");
   const [flashWord, setFlashWord] = useState(true);
   const [userInput, setUserInput] = useState("");
   const [result, setResult] = useState("");
@@ -33,8 +33,8 @@ function App() {
   const handleRestartClick = () => {
     setIndex((prevIndex) => (prevIndex + 1) % WORD_LIST.length);
     setFlashWord(true);
-    setResult('');
-    setUserInput('');
+    setResult("");
+    setUserInput("");
     setWord(WORD_LIST[index]);
   };
 

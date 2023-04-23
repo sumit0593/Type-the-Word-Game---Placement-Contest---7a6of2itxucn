@@ -4,7 +4,7 @@ import "../styles/App.css";
 const WORD_LIST = ["apple", "banana", "cherry", "grape", "orange"];
 
 function App() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState(WORD_LIST[0]);
   const [flashWord, setFlashWord] = useState(true);
   const [userInput, setUserInput] = useState("");
   const [result, setResult] = useState("");

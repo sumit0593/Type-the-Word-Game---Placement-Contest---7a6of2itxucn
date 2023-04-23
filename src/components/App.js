@@ -32,7 +32,7 @@ function App() {
   };
   const handleRestartClick = () => {
     setIndex((prevIndex) => (prevIndex + 1) % WORD_LIST.length);
-    setWord(WORD_LIST[index]);
+    // setWord(WORD_LIST[index]);
     setFlashWord(true);
     setResult("");
     setUserInput("");
